@@ -18,7 +18,7 @@ header h3 {
 
 header #eliGearing {
     float: left;
-    color: var(--darkest-color-3);
+    color: var(--darkest-color-1);
 }
 
 @media (max-width: 699px) {
@@ -29,29 +29,49 @@ header #eliGearing {
 
 header #filmDevelopmentSpeaking a {
     display: inline-block;
-    padding: 0 10px;
+    margin: 0 8px;
+    padding: 0 2px;
     text-decoration: none;
     color: var(--darkest-color-1);
+    position: relative;
 }
 
-header #filmDevelopmentSpeaking a:hover {
-    color: var(--darkest-color-3);
+header #filmDevelopmentSpeaking a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: var(--dark-color-3);
+    opacity: 0;
+    transition: opacity 200ms, transform 200ms;
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+    z-index: -1;
 }
 
-header #filmDevelopmentSpeaking .period {
-    color: var(--dark-color-2);
+header #filmDevelopmentSpeaking a:hover::before,
+header #filmDevelopmentSpeaking a:focus::before {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+  transform: scale(1);
 }
 
 header #resumeLink {
     float: right;
     padding: 6px 12px;
-    background-color: var(--accent-color-1);
-    color: var(--header-background);
-    border-radius: 15px;
+    background-color: var(--white-color);
+    color: var(--darkest-color-1);
+    border: 1px solid var(--darkest-color-1);
+    border-radius: 20px;
     font-weight: bold;
     text-decoration: none;
+    transition: 200ms;
 }
 
 header #resumeLink:hover {
-    background-color: var(--accent-color-2);
+    background-color: var(--darkest-color-1);
+    color: var(--white-color);
 }
