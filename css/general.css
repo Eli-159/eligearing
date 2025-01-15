@@ -1,0 +1,76 @@
+/* Section Display */
+section {
+    display: block;
+    width: 100%;
+    scroll-margin-top: 56px;
+    padding: 1px 0;
+}
+
+section > div {
+    display: block;
+    margin: 2rem auto;
+    width: min(95%, 1000px);
+    font-size: max(calc(min(95vw, 1000px)/50), 12px);
+    overflow: auto;
+}
+
+/* Table Container Display */
+.tableCont {
+    display: table;
+}
+
+.tableCont > .imgWrap:first-child, .tableCont > p:first-child {
+    padding: 0.3em 1.5rem 0.3rem 0.3rem;
+}
+
+.tableCont > .imgWrap {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.tableCont > .imgWrap > img {
+    display: inline-block;
+}
+
+.tableCont > p, .tableCont > .textWrap {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0.3rem;
+}
+
+.tableCont p {
+    font-size: 1em;
+}
+
+/* Floating Box Display */
+.floatingBox {
+    padding: 2% !important;
+    border-radius: 10px;
+    margin: 1rem 1%;
+    background-color: var(--white-color);
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Display */
+.title {
+    margin: 0.5rem 0 1rem;
+}
+
+.title::after {
+    content: ".";
+    color: var(--dark-color-3);
+}
+
+p {
+    margin: 0 0 0.5rem;
+    color: var(--black-color);
+}
+
+a {
+    color: var(--dark-color-2);
+}
+
+a:hover {
+    color: var(--dark-color-3);
+}

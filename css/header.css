@@ -1,0 +1,57 @@
+header {
+    background-color: var(--white-color);
+    text-align: center;
+    height: 28px;
+    padding: 14px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+header h3 {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+}
+
+header #eliGearing {
+    float: left;
+    color: var(--darkest-color-3);
+}
+
+@media (max-width: 699px) {
+    header #filmDevelopmentSpeaking {
+        display: none;
+    }
+}
+
+header #filmDevelopmentSpeaking a {
+    display: inline-block;
+    padding: 0 10px;
+    text-decoration: none;
+    color: var(--darkest-color-1);
+}
+
+header #filmDevelopmentSpeaking a:hover {
+    color: var(--darkest-color-3);
+}
+
+header #filmDevelopmentSpeaking .period {
+    color: var(--dark-color-2);
+}
+
+header #resumeLink {
+    float: right;
+    padding: 6px 12px;
+    background-color: var(--accent-color-1);
+    color: var(--header-background);
+    border-radius: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header #resumeLink:hover {
+    background-color: var(--accent-color-2);
+}

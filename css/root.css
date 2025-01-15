@@ -1,0 +1,25 @@
+:root {
+    --white-color: #ffffff;
+    --lightest-color-1: #a3e1f5;
+    --lightest-color-2: #a3dcd2;
+    --lightest-color-3: #b0ddac;
+    --light-color-1: #19b3e6;
+    --light-color-2: #24c290;
+    --light-color-3: #47c33c;
+    --dark-color-1: #0774ab;
+    --dark-color-2: #13916b;
+    --dark-color-3: #1e9813;
+    --darkest-color-1: #043162;
+    --darkest-color-2: #105641;
+    --darkest-color-3: #165511;
+    --black-color: #011123;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}

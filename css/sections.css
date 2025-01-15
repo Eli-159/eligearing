@@ -1,0 +1,181 @@
+/* (1) Typing Title Section */
+#hiThereTitleSec {
+    height: calc(100vh - 56px);
+}
+
+#typingTitleCont {
+    text-align: center;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+}
+
+#typingTitle {
+    font-size: 5em;
+    margin: 0 0 30px 0;
+    color: var(--black-color)
+}
+
+#typingTitle br {
+    display: block;
+    content: "";
+    margin-top: 30px;
+}
+
+#typingTitle span::after {
+    content: "";
+    border-radius: 4px;
+    border-right: 4px solid transparent;
+}
+
+#typingTitle span.typing::after {
+    animation: blinkTextCursor 750ms steps(44) infinite normal;
+}
+
+@keyframes blinkTextCursor{
+    from{border-right-color: black;}
+    to{border-right-color: transparent;}
+}
+
+
+
+/* (2) Education Section  */
+#education {
+    text-align: center;
+    background: radial-gradient(farthest-corner, var(--lightest-color-3), var(--lightest-color-2) 80%);
+}
+
+#education .tableCont {
+    text-align: center;
+}
+
+#education .tableCont .imgWrap {
+    width: 4em;
+}
+
+#education .tableCont .imgWrap img {
+    height: 4em;
+}
+
+
+
+/* (3) Development Section */
+#development {
+    background: linear-gradient(45deg, var(--darkest-color-1), var(--darkest-color-2))
+}
+
+
+
+/* (4) Speaking Section */
+#speaking {
+    background: linear-gradient(135deg, var(--light-color-2), var(--lightest-color-2));
+}
+
+@media (max-width: 549px) {
+    #speaking .floatingBox {
+        overflow: hidden;
+        padding: 0 !important;
+    }
+
+    #speaking .floatingBox .textWrap {
+        width: 92%;
+        margin: 4% auto;
+    }
+
+    #speaking #govHouseVert {
+        display: none;
+    }
+
+    #speaking #govHouseHorz {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (min-width: 550px) {
+    #speaking .floatingBox {
+        position: relative;
+        overflow: hidden;
+    }
+
+    #speaking .floatingBox .textWrap {
+        width: 65%;
+    }
+
+    #speaking #govHouseVert {
+        display: block;
+        height: 100%;
+        width: 33%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #speaking #govHouseHorz {
+        display: none;
+    }
+}
+
+
+
+/* (5) Film Section */
+#film {
+    background: linear-gradient(0deg, var(--black-color), var(--darkest-color-1));
+}
+
+#film > div {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#film img {
+    width: 12em;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+#film .floatingBox {
+    display: inline-block;
+    width: 30em;
+    max-width: 90%;
+    margin: 0;
+    text-align: left;
+}
+
+
+
+/* (6) Leadership & Business Section */
+#leadershipBusiness {
+    background: radial-gradient(farthest-corner, var(--lightest-color-2), var(--lightest-color-1));
+}
+
+#leadershipBusiness > div {
+    text-align: center;
+    padding: 1.2rem 0;
+}
+
+#leadershipBusiness .halfSection {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+@media (max-width: 699px) {
+    #leadershipBusiness .halfSection {
+        width: 90%;
+    }
+}
+
+@media (min-width: 700px) {
+    #leadershipBusiness .halfSection {
+        width: 40%;
+    }
+}
+
+#leadershipBusiness .halfSection h2.title {
+    margin-top: 0;
+}
